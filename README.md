@@ -36,8 +36,7 @@ dotnet add package DustInTheWind.TripleDragonFunding.Toolkit
 
 In Triple Dragon Funding web application:
 
-1. Log in.
-2. TBD
+- TBD
 
 You will get a CSV containing transaction rows that can be parsed with this toolkit.
 
@@ -61,7 +60,7 @@ Each row is mapped to a `TransactionRecord` with the following columns:
 | CSV Column      | Type     | TransactionRecord Property | Description                                         |
 |-----------------|----------|--------------------------|-----------------------------------------------------|
 | `Date`          | `DateOnly` | `Date`                   | The date when the transaction occurred.             |
-| `Loan` | `Loan` | `Loan`     | A unique identifier for the loan.         |
+| `Loan` | `Loan` | `Loan`     | A unique identifier for the loan.        |
 | `Type`    | `TransactionType` | `Type`            | The type of transaction (e.g., Loan investment, Loan interest). |
 | `Amount (€)` | `decimal` | `Amount`          | The transaction amount.                             |
 
