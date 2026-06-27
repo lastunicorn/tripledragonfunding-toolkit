@@ -4,12 +4,12 @@ using DustInTheWind.TripleDragonFunding.Toolkit.Csv;
 namespace DustInTheWind.TripleDragonFunding.Toolkit;
 
 /// <summary>
-/// Represents a Mintos statement document.
-/// The data is loaded from a CSV file from file system or from memory, from a CSV string,
+/// Represents a Triple Dragon Funding statement document.
+/// The data is loaded from a CSV file from the file system or from memory, from a CSV string,
 /// <see cref="Stream"/>, <see cref="StreamReader"/> or <see cref="TextReader"/>.
 /// </summary>
 /// <remarks>
-/// The expected structure of the CSV file is the one that is exported from the Mintos website (2026).
+/// The expected structure of the CSV file is the one that Triple Dragon Funding is using in 2026.
 /// </remarks>
 public class StatementDocument : Collection<TransactionRecord>
 {

@@ -9,7 +9,7 @@ public record class TransactionRecord
 
 	public string Loan { get; set; }
 
-	public string Type { get; set; }
+	public TransactionType Type { get; set; }
 
 	public decimal Amount { get; set; }
 }

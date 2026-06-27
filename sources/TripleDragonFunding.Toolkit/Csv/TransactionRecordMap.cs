@@ -13,7 +13,8 @@ internal sealed class TransactionRecordMap : ClassMap<TransactionRecord>
 			.Name("Loan");
 
 		Map(x => x.Type)
-			.Name("Type");
+			.Name("Type")
+			.TypeConverter<TransactionTypeTypeConverter>();
 
 		Map(x => x.Amount)
 			.Name("Amount (€)")
