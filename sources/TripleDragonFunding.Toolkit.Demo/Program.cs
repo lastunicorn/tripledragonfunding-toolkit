@@ -8,7 +8,7 @@ internal static class Program
 {
 	public static async Task Main(string[] args)
 	{
-		const string fileName = "/nfs/YubabaAlez/projects/finance/tripledragonfunding-toolkit.emanuel/Statement - Wallet - 2026-05-01-2026-06-26.csv";
+		const string fileName = "statement.csv";
 
 		try
 		{
