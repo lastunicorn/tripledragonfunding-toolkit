@@ -8,7 +8,7 @@ internal static class Program
 {
 	public static async Task Main(string[] args)
 	{
-		const string fileName = "statement.csv";
+		const string fileName = "/nfs/YubabaAlez/projects/finance/tripledragonfunding-toolkit.emanuel/Statement - Wallet - 2026-05-01-2026-06-26.csv";
 
 		try
 		{
@@ -31,7 +31,7 @@ internal static class Program
 	{
 		DataGrid dataGrid = new()
 		{
-			Title = "Transactions",
+			Title = $"Transactions ({document.Currency})",
 			BorderTemplate = BorderTemplate.PlusMinusBorderTemplate,
 			Footer = $"Count: {document.Count}"
 		};

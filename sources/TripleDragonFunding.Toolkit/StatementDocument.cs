@@ -13,6 +13,8 @@ namespace DustInTheWind.TripleDragonFunding.Toolkit;
 /// </remarks>
 public class StatementDocument : Collection<TransactionRecord>
 {
+	public Currency Currency { get; set; }
+	
 	public static async Task<StatementDocument> LoadFromFileAsync(string filePath, CancellationToken cancellationToken = default)
 	{
 		ArgumentException.ThrowIfNullOrWhiteSpace(filePath);
@@ -109,6 +111,8 @@ public class StatementDocument : Collection<TransactionRecord>
 		{
 			CsvStatementDocument csvStatementDocument = new(textReader);
 			StatementDocument statementDocument = [];
+
+			statementDocument.Currency = await csvStatementDocument.ReadCurrency();
 
 			await foreach (TransactionRecord transactionRecord in csvStatementDocument.ReadTransactions(cancellationToken))
 				statementDocument.Add(transactionRecord);
