@@ -60,8 +60,8 @@ Each row is mapped to a `TransactionRecord` with the following columns:
 
 | CSV Column      | Type     | TransactionRecord Property | Description                                         |
 |-----------------|----------|--------------------------|-----------------------------------------------------|
-| `Date`          | `DateTime` | `Date`                   | The date when the transaction occurred.             |
-| `Loan` | `string` | `Loan`     | A unique identifier for the loan.         |
+| `Date`          | `DateOnly` | `Date`                   | The date when the transaction occurred.             |
+| `Loan` | `Loan` | `Loan`     | A unique identifier for the loan.         |
 | `Type`    | `TransactionType` | `Type`            | The type of transaction (e.g., Loan investment, Loan interest). |
 | `Amount (€)` | `decimal` | `Amount`          | The transaction amount.                             |
 

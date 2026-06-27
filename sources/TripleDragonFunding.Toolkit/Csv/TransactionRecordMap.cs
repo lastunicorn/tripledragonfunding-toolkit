@@ -10,7 +10,8 @@ internal sealed class TransactionRecordMap : ClassMap<TransactionRecord>
 			.Name("Date");
 
 		Map(x => x.Loan)
-			.Name("Loan");
+			.Name("Loan")
+			.TypeConverter<LoanTypeConverter>();
 
 		Map(x => x.Type)
 			.Name("Type")

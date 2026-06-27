@@ -5,9 +5,9 @@ namespace DustInTheWind.TripleDragonFunding.Toolkit;
 /// </summary>
 public record class TransactionRecord
 {
-	public DateTime Date { get; set; }
+	public DateOnly Date { get; set; }
 
-	public string Loan { get; set; }
+	public Loan Loan { get; set; }
 
 	public TransactionType Type { get; set; }
 
