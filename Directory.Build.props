@@ -1,0 +1,27 @@
+<Project>
+
+    <PropertyGroup>
+        <Company>Dust in the Wind</Company>
+        <Product>Triple Dragon Funding Toolkit</Product>
+        <Copyright>Copyright © 2026 Dust in the Wind</Copyright>
+        <Version>0.0.0.0</Version>
+        <Description>A .NET library that helps working with files exported from Triple Dragon Funding.</Description>
+		<PackageReleaseNotes>$([System.IO.File]::ReadAllText('$(MSBuildThisFileDirectory)releasenotes.txt'))</PackageReleaseNotes>
+        <PackageTags>triple-dragon-funding loans p2p-lending</PackageTags>
+        <RepositoryType>git</RepositoryType>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
+        <PackageProjectUrl>https://github.com/lastunicorn/tripledragonfunding-toolkit</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/lastunicorn/tripledragonfunding-toolkit</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="$(MSBuildThisFileDirectory)LICENSE" Pack="true" PackagePath="" Link="LICENSE" />
+        <None Include="$(MSBuildThisFileDirectory)README.md" Pack="true" PackagePath="" Link="README.md" />
+		<None Include="$(MSBuildThisFileDirectory)changelog.txt" Pack="true" PackagePath="" Link="changelog.txt" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="sources\TripleDragonFunding.Toolkit.Demo\TripleDragonFunding.Toolkit.Demo.csproj" />
+  <Project Path="sources\TripleDragonFunding.Toolkit\TripleDragonFunding.Toolkit.csproj" />
+</Solution>

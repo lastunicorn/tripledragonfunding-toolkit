@@ -1,0 +1,6 @@
+Triple Dragon Funding Toolkit
+================================================================================
+
+v1.0.0
+--------------------------------------------------------------------------------
+[new   ] Created the StatementDocument class to parse the CSV statement file.
